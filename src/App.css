@@ -8,3 +8,11 @@
   position: absolute;
   left: 5%;
 }
+
+.item-holder{
+  width: 250px;
+}
+
+.cardBody{
+  height: 300px;
+}

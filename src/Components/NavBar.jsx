@@ -7,9 +7,9 @@ import '../App.css';
 export function NavBar(){
     
     const navigate = useNavigate()
-    const homeLink = {link: '/', navTitle: 'Home', class: 'bi bi-house'}
-    const profileLink = {link: '/profile', navTitle: 'Profile', class: 'bi bi-person'}
-    const cartLink = {link: '/cart', navTitle: 'Cart', class: 'bi bi-cart-dash'}
+    const homeLink = {link: '/', navTitle: 'Home', classProp: 'bi bi-house'}
+    const profileLink = {link: '/profile', navTitle: 'Profile', classProp: 'bi bi-person'}
+    const cartLink = {link: '/cart', navTitle: 'Cart', classProp: 'bi bi-cart-dash'}
 
     const navLinks = [homeLink, cartLink, profileLink]
 
@@ -25,7 +25,7 @@ export function NavBar(){
                 return(
                     <li className="nav-link" key={index}>
                         <button className="btn btn-link link-offset-2 link-underline link-underline-opacity-0" onClick={()=> handleClick(navLinks.link) } >
-                            <i className={navLinks.class}></i>
+                            <i className={navLinks.classProp}></i>
                         </button>
                     </li> 
                 )
