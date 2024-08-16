@@ -1,5 +1,10 @@
+import { NavBar } from "../Components/NavBar"
+
 export function Profile(){
     return(
-        <h1>This is Profile</h1>
+        <>
+            <NavBar/>
+            <h1>Profile</h1>
+        </>
     )
 }
