@@ -7,16 +7,22 @@ export function Item({itemName, itemImageSource, itemPrice, itemSold}){
     
     return( 
         <>
-        <div className='item-holder align-items-stretch'>
-            <div className="card mx-3 my-1" >
-            <img src={itemImageSource} className="card-img-top" ></img>
-                <div className="cardBody mx-2 p-2">
-                    <h5 className="card-title">{itemName}</h5>
-                    <p className="card-text">{itemPrice} {itemSold}</p>
-                    <a href="#" className="btn btn-primary">Go somewhere</a>
+        <div className="col">
+            <div className='item-holder align-items-stretch'>
+                <div className="card my-2" >
+                <img src={itemImageSource} ></img>
+                    <div className="cardBody mx-1 my-1 p-2">
+                        <h5 className="card-title text-truncate">{itemName}</h5>
+                        <div className="card-text d-flex d-flex justify-content-between"> 
+                            <p>${itemPrice}</p>
+                            <p>{itemSold}</p>
+                        </div>
+                        <button className='btn btn-warning w-100'><i className="bi bi-cart-plus"></i></button>
+                    </div>
                 </div>
             </div>
         </div>
+        
         </>
     )
 }

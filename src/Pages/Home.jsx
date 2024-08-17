@@ -7,9 +7,9 @@ export function Home(){
     return(
         <>
             <NavBar/>
-            <div className="input-group mx-auto px-3">
+            <div className="input-group mx-auto px-3 mw-sm-50 ">
                 <input type="text" className="form-control"/>
-                <button className="btn btn-outline-secondary" type="button" id="button-addon2"><i className="bi bi-search"></i></button>
+                <button className="btn btn-secondary" type="button" id="button-addon2"><i className="bi bi-search"></i></button>
             </div>
             <ItemHolder/>
         </>
